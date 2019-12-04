@@ -19,6 +19,13 @@ if not(os.path.exists(d1input) and os.path.isfile(d1input)):
         d1i.write(response.text)
 
 totalfuel = 0
+fuel_fuel = 0
+
+def fuelinception(fuel):
+    if fuel <= 0:
+        return 0
+    extrafuel = max(floor(fuel / 3) - 2, 0)
+    return extrafuel + fuelinception(extrafuel)
 
 with open(d1input) as d1i:
     for i in d1i:
@@ -26,5 +33,9 @@ with open(d1input) as d1i:
         #print(mod_weight)
         fuel=floor(mod_weight / 3) - 2
         totalfuel += fuel
+        fuel_fuel += fuelinception(fuel)
 
 print(f"Initial fuel requirement: {totalfuel}")
+print(f"Fuel fuel: {fuel_fuel}")
+
+print(f"Total fuel requirement: {totalfuel + fuel_fuel}")
