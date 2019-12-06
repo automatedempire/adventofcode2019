@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+from adventhelper import download_input
+
+dayinput = download_input(day=0)
+
+with open(dayinput) as d_in:
+    pass
