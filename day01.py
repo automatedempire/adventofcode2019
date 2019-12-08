@@ -5,7 +5,7 @@ import os
 from math import floor
 
 url='https://adventofcode.com/2019/day/1/input'
-d1input='d1.input'
+d1input='input/d1.input'
 #Must grab this from a logged in session.
 cookiefile='session.cookie'
 

@@ -1,4 +1,3 @@
 venv
 session.cookie
-*.input
 __pycache__

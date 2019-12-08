@@ -4,7 +4,7 @@ import requests
 import os
 
 url='https://adventofcode.com/2019/day/2/input'
-dayinput='d2.input'
+dayinput='input/d2.input'
 #Must grab this from a logged in session.
 cookiefile='session.cookie'
 

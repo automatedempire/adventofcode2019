@@ -4,7 +4,7 @@ import requests
 import os
 
 def download_input(day):
-    dayinput=f'd{day}.input'
+    dayinput=f'input/d{day}.input'
 
     if not(os.path.exists(dayinput) and os.path.isfile(dayinput)):
         print("Input doesn't exist yet. Downloading...")
